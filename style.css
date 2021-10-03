@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.foto{
+    height: 500px;
+    width:300px;
+    max-width: 100%;
+    border-radius: 50%;
+}
