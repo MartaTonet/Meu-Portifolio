@@ -1,8 +1,105 @@
 @charset "UTF-8";
 
-.foto{
-    height: 500px;
-    width:300px;
-    max-width: 100%;
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+body{
+    background-color: white;
+}
+
+.cabecalho{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.logo{
     border-radius: 50%;
-} 
+    width: 100px;
+    
+}
+.titulos{
+    display: flex; 
+    justify-content: space-between;
+    list-style: none;
+    text-align: left;
+    text-decoration: none; 
+}
+
+li a{
+    color:#DF744A;
+}
+
+.menu{
+    display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  list-style: none;
+  /* margin: 0;
+  padding: 0; */
+  width: 150px;
+}
+
+.fundo{
+    background-color:#8FD8D2
+}
+
+.capa{
+    top: 0.5px;
+left: 1px;
+width: 100%;
+height: 377px;
+border: 1px solid #707070;
+opacity: 1;
+position: relative;
+}
+
+.avatar__imagem{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 320px;
+    right: 50%;
+}
+
+.github{
+    width: 4%;
+    position: absolute;
+    top: 588px;
+    right: 60%;
+}
+
+.linkedin{
+    width: 4%;
+    position: absolute;
+    top: 588px;
+    right: 55%;
+}
+
+.nome{
+    margin-left: 850px;
+    top: 500px;
+    right: 30%;
+}
+
+.apresentacao{
+    margin-left: 850px;
+    top: 500px;
+    right: 30%;
+}
+
+.formacao{
+    background-color: #fedcd2;
+    color:#DF744A;   
+}
+
+.trabalhos{
+    background-color:#8FD8D2;
+    color: #DF744A;
+}
+
