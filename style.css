@@ -6,14 +6,27 @@
 }
 
 body{
-    background-color: white;
+    background-image:url(/img.jpeg/fotobody.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
 }
 
 .cabecalho{
     align-items: center;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    
+}
 
+@media screen and (max-wdith: 1040px) {
+    .cabecalho{
+        flex-direction: column;
+    }
 }
 
 
@@ -31,21 +44,20 @@ body{
 }
 
 li a{
-    color:#DF744A;
+    color:#800000
 }
+
 
 .menu{
     display: flex;
   font-size: 20px;
   justify-content: space-between;
   list-style: none;
-  /* margin: 0;
-  padding: 0; */
   width: 150px;
 }
 
 .fundo{
-    background-color:#8FD8D2
+    background-color:#DB7093
 }
 
 .capa{
@@ -55,7 +67,7 @@ width: 100%;
 height: 377px;
 border: 1px solid #707070;
 opacity: 1;
-position: relative;
+
 }
 
 .avatar__imagem{
@@ -65,6 +77,7 @@ position: relative;
     position: absolute;
     top: 320px;
     right: 50%;
+    opacity: 1;
 }
 
 .github{
@@ -94,12 +107,119 @@ position: relative;
 }
 
 .formacao{
-    background-color: #fedcd2;
-    color:#DF744A;   
+    border: solid ;
+    color:#800000;   
+    text-align:center;
+    
+
+
+
 }
 
 .trabalhos{
     background-color:#8FD8D2;
     color: #DF744A;
+    text-align: center;
 }
 
+.projeto{
+    color: #800000;
+
+
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.caixa{
+    background-color:#800000;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 10px;
+    width: 300px;
+    /* margin-left: 40%; */
+    
+}
+
+.img{
+    width: 100%;
+    height: 120px;
+}
+
+.botao{
+    background-color: #8FD8D2;
+    cursor: pointer;
+    border-radius: 4px;
+    border-color:#ffffff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color: #ffffff;
+
+}
+
+.fundoFooter{
+    background-color:#DB7093;
+    /* border:solid */
+    
+}
+
+.contact{
+
+    color: #ffffff;
+    
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width:30% ;
+}
+
+.formulario label{
+    color: #ffffff;
+    font-size: 10px;
+    
+}
+
+.formulario input{
+    background-color:transparent ;
+    border: 1px solid;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size: 13px;
+    margin-bottom: 8px;
+
+}
+
+.formulario textarea{
+    background-color:transparent ;
+    border: 1px solid;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.formulario button{
+    background-color: #8FD8D2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+.formulario button:hover{
+    background-color: #ffffff;
+}
+
+.margem{
+    margin-left: 30%;
+}
