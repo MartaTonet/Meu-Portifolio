@@ -1,17 +1,20 @@
 
 
 function contactar(event) {
-    event.preventDefault()
-
+    const botao = document.getElementById('botao');
+    botao.addEventListener('click',(event)=>{
+        event.preventDefault();
+    })
 }
 
 
+
+function Enviar(){
+    
 let email = document.querySelector("#email").value;
 let nome = document.querySelector("#nome").value;
 
-function Enviar(){
-
-     if(nome==="" || email===""){
+     if(nome=="" || email==""){
         return alert("CAMPOS VAZIOS...! Insira os valores requeridos..!")
     }
     else if (nome === "") {
@@ -24,9 +27,14 @@ function Enviar(){
     }else if (nome) {
         return alert('Obrigado sr(a) ' + nome + ' a sua mensagem foi enviada. Entrarei em contato assim que poder!');
     }
+    
 
 }
 Enviar()
+
+
+
+
 
 function link(url){
     let req =  new XMLHttpRequest();

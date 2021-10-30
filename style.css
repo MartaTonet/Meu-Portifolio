@@ -47,19 +47,6 @@ body{
     }
 }
 
-
-@media screen and (min-width:500px){
-    /* .sobre{
-        margin-left: 800px;
-        top: 500px;
-        right: 30%;
-        padding: 10px;
-        text-indent: 50px;
-    }     */
-    }
-
-
-
 .logo{
     border-radius: 50%;
     width: 70px;
