@@ -100,7 +100,7 @@ border: 1px solid #707070;
 }
 
 .avatar__imagem{
-    width: 20%;
+    width: 30%;
     border-radius: 50%;
     position: relative;
     margin-bottom: -20px;
@@ -119,7 +119,7 @@ border: 1px solid #707070;
     position: relative;
     /* top: 588px;
     right: 55%; */
-    margin-left: 3%;
+    margin-left: 6%;
 }
 
 .sobre{
@@ -277,8 +277,9 @@ border: 1px solid #707070;
 
 .avatar{
     position: relative;
-    left: 20%;
+    left: 44%;
     margin-top: 90px;
+    margin-bottom: 20px;
     align-items: center;
     width: fit-content;
 }
