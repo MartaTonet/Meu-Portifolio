@@ -2,8 +2,18 @@
 
 *{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+   margin: 0;
+   padding: 0;
+   font-size: small;
 }
+/* configuracao do container para display flex */
+
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+
+/* configurando a imagem do fundo */
 
 body{
     background-image:url(/img.jpeg/fotobody.jpg);
@@ -12,7 +22,11 @@ body{
     background-position: top;
     background-attachment: fixed;
 }
+body{
+    width: 100%;
+}
 
+/* configurando o menu */
 .cabecalho{
     align-items: center;
     display: flex;
@@ -23,18 +37,27 @@ body{
     
 }
 
-@media screen and (max-wdith: 1040px) {
-    .cabecalho{
+/* Configurando a responsividade do site */
+@media screen and (max-width:500px){
+    .cont{
+        display: flex;
         flex-direction: column;
+        width: fit-content;
+    }
+    .capa{
+        line-height: 80px;
     }
 }
 
-
+/* Configurando a foto do menu */
 .logo{
     border-radius: 50%;
-    width: 100px;
+    width: 70px;
+    position: relative;
     
 }
+
+/* Configurando os titulos do menu */
 .titulos{
     display: flex; 
     justify-content: space-between;
@@ -43,11 +66,12 @@ body{
     text-decoration: none; 
 }
 
+/* Configurando a cor dos titulos no menu */
 li a{
     color:#800000
 }
 
-
+/* Configurando a organização do menu */
 .menu{
     display: flex;
   font-size: 20px;
@@ -56,92 +80,89 @@ li a{
   width: 150px;
 }
 
+/* Configurando a cor de fundo do menu */
 .fundo{
-    background-color:#DB7093
+    background-color:#DB7093;
+    
 }
 
+/* Configurando a imagem de capa */
 .capa{
-    top: 0.5px;
-left: 1px;
 width: 100%;
 height: 377px;
 border: 1px solid #707070;
-opacity: 1;
 
 }
 
+/* Configurando a minha foto principal do site */
 .avatar__imagem{
-    height: 300px;
-    width: 300px;
+    width: 30%;
     border-radius: 50%;
-    position: absolute;
-    top: 320px;
-    right: 50%;
-    opacity: 1;
+    position: relative;
+    margin-bottom: -20px;
 }
 
+/* Configurando a posição  o ícone do .github que se encontra como avatar na foto principal */
 .github{
-    width: 4%;
-    position: absolute;
-    top: 588px;
-    right: 60%;
+    width: 20px;
+    position: relative;
+    margin-left:6%;
 }
 
+
+/* Configurando a posição  o ícone do linkedin que se encontra como avatar na foto principal */
 .linkedin{
-    width: 4%;
-    position: absolute;
-    top: 588px;
-    right: 55%;
+    width: 20px;
+    position: relative;
+    margin-left: 6%;
 }
 
-.nome{
-    margin-left: 850px;
-    top: 500px;
-    right: 30%;
-}
 
-.apresentacao{
-    margin-left: 850px;
-    top: 500px;
-    right: 30%;
-}
-
+/* Configurando o titulo formação */
 .formacao{
-    border: solid ;
+    border: solid ; 
     color:#800000;   
     text-align:center;
-    
-
-
 
 }
 
+/* Configurando o titulo experiência de trabalho */
 .trabalhos{
     background-color:#8FD8D2;
     color: #DF744A;
     text-align: center;
 }
 
+/* Configurando o titulo projetos */
 .projeto{
     color: #800000;
-
-
-}
-
-.cards{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 
+/* Configurando o card do projeto */
 .caixa{
     background-color:#800000;
-    border-radius: 4px;
+    border-radius: 2%;
     color: #ffffff;
     padding: 10px;
     width: 300px;
-    /* margin-left: 40%; */
-    
+    box-shadow: 1px 25px 34px black;
+}
+
+/* Configurando os itens do card do projeto */
+.caixa ul li{
+    list-style: none;
+}
+
+/* Configurando o textos dos repositórios do .github */
+#repositorio{
+    border-radius: 2%;
+    line-height: 40px;
+    width: 300px;
+    padding: 5px;
 }
 
 .img{
@@ -163,63 +184,108 @@ opacity: 1;
 
 }
 
+
 .fundoFooter{
     background-color:#DB7093;
-    /* border:solid */
-    
+    display:flex;
+    height: 200px;
 }
 
 .contact{
+    color: #800000;
+}
+.contact h1{
+    text-align: center;
+}
 
-    color: #ffffff;
-    
+.contact h2{
+    margin-left: 50px;
+    font-size: 14pt;
+    font-weight: 900;
+
+}
+.contact p{
+    margin-left: 50px;
+    font-size: 10pt;
 }
 
 .formulario{
     display: flex;
     flex-direction: column;
-    width:30% ;
+    width:100%;
+    padding-bottom: 20px;
 }
 
 .formulario label{
-    color: #ffffff;
-    font-size: 10px;
+    color: #800000;
+    font-size: 12px;
     
 }
 
+
 .formulario input{
     background-color:transparent ;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 5px;
-    color:#ffffff;
+    color:#800000;
     font-size: 13px;
     margin-bottom: 8px;
-
 }
 
 .formulario textarea{
     background-color:transparent ;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 5px;
-    color:#ffffff;
+    color:#800000;
     font-size: 13px;
     margin-bottom: 10px;
 }
 
 .formulario button{
-    background-color: #8FD8D2;
+    background-color: #800000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 8px;
     padding: 5px 10px;
     width: fit-content;
+    padding: 6px;
 }
 
 .formulario button:hover{
-    background-color: #ffffff;
+    background-color: #8FD8D2;
 }
 
 .margem{
     margin-left: 30%; 
+    margin-left: 20%; 
+
+}
+
+#redesSociais{
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.avatar{
+    position: relative;
+    left: 44%;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    align-items: center;
+    width: fit-content;
+}
+.apresentacao p,h1,h2{
+    display: flex;
+    right: 900px;
+    flex-direction: column;
+}
+.sobreMim,h1,h3, p{
+
+     text-align: center;
+}
+.pe{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
 }
