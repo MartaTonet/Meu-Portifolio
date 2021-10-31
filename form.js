@@ -27,10 +27,7 @@ let nome = document.querySelector("#nome").value;
     }else if (nome) {
         return alert('Obrigado sr(a) ' + nome + ' a sua mensagem foi enviada. Entrarei em contato assim que poder!');
     }
-    
-
 }
-Enviar()
 
 
 

@@ -26,6 +26,7 @@ body{
     width: 100%;
 }
 
+/* configurando o menu */
 .cabecalho{
     align-items: center;
     display: flex;
@@ -36,6 +37,7 @@ body{
     
 }
 
+/* Configurando a responsividade do site */
 @media screen and (max-width:500px){
     .cont{
         display: flex;
@@ -47,12 +49,15 @@ body{
     }
 }
 
+/* Configurando a foto do menu */
 .logo{
     border-radius: 50%;
     width: 70px;
     position: relative;
     
 }
+
+/* Configurando os titulos do menu */
 .titulos{
     display: flex; 
     justify-content: space-between;
@@ -61,11 +66,12 @@ body{
     text-decoration: none; 
 }
 
+/* Configurando a cor dos titulos no menu */
 li a{
     color:#800000
 }
 
-
+/* Configurando a organização do menu */
 .menu{
     display: flex;
   font-size: 20px;
@@ -74,11 +80,13 @@ li a{
   width: 150px;
 }
 
+/* Configurando a cor de fundo do menu */
 .fundo{
     background-color:#DB7093;
     
 }
 
+/* Configurando a imagem de capa */
 .capa{
 width: 100%;
 height: 377px;
@@ -86,6 +94,7 @@ border: 1px solid #707070;
 
 }
 
+/* Configurando a minha foto principal do site */
 .avatar__imagem{
     width: 30%;
     border-radius: 50%;
@@ -93,31 +102,23 @@ border: 1px solid #707070;
     margin-bottom: -20px;
 }
 
+/* Configurando a posição  o ícone do .github que se encontra como avatar na foto principal */
 .github{
     width: 20px;
     position: relative;
-    /* top: 588px;
-    right: 65%; */
     margin-left:6%;
 }
 
+
+/* Configurando a posição  o ícone do linkedin que se encontra como avatar na foto principal */
 .linkedin{
     width: 20px;
     position: relative;
-    /* top: 588px;
-    right: 55%; */
     margin-left: 6%;
 }
 
-.sobre{
-    margin-left: 800px;
-    top: 500px;
-    right: 30%;
-    padding: 10px;
-    text-indent: 50px;
-}
 
-
+/* Configurando o titulo formação */
 .formacao{
     border: solid ; 
     color:#800000;   
@@ -125,12 +126,14 @@ border: 1px solid #707070;
 
 }
 
+/* Configurando o titulo experiência de trabalho */
 .trabalhos{
     background-color:#8FD8D2;
     color: #DF744A;
     text-align: center;
 }
 
+/* Configurando o titulo projetos */
 .projeto{
     color: #800000;
     display: flex;
@@ -139,7 +142,7 @@ border: 1px solid #707070;
     margin-bottom: 10px;
 }
 
-
+/* Configurando o card do projeto */
 .caixa{
     background-color:#800000;
     border-radius: 2%;
@@ -148,12 +151,14 @@ border: 1px solid #707070;
     width: 300px;
     box-shadow: 1px 25px 34px black;
 }
+
+/* Configurando os itens do card do projeto */
 .caixa ul li{
     list-style: none;
 }
 
+/* Configurando o textos dos repositórios do .github */
 #repositorio{
-    /* border:2px solid #800000; */
     border-radius: 2%;
     line-height: 40px;
     width: 300px;
@@ -253,7 +258,7 @@ border: 1px solid #707070;
 
 .margem{
     margin-left: 20%; 
-    /* width: 1990px; */
+    
 
 }
 
